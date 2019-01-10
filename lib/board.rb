@@ -27,6 +27,7 @@ class Board
   end
   
   def turn_count
+    @cells.collect {|x| x == " "}.size / 3
   end
   
   def taken
