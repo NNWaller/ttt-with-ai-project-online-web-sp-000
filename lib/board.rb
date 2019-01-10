@@ -21,7 +21,7 @@ class Board
     @cells[user_input.to_i - 1]
   end
   
-  def full
+  def full?
     
 
 
