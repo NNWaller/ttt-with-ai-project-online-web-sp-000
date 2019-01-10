@@ -21,8 +21,8 @@ class Board
     @cells[user_input.to_i - 1]
   end
     
-    def full?(board)
-  board.all?{|x| x == "X" || x == "O"}
+    def full?(cells)
+  cells.all?{|x| x == "X" || x == "O"}
 end
 
 
