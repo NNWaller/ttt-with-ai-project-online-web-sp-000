@@ -25,7 +25,6 @@ class Board
   
 def full?
        cells.all {|index| index == "X" || index == "O"}
-    end
     true
   end
 
