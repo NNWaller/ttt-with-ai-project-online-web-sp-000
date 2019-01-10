@@ -22,7 +22,8 @@ class Board
   end
   
   def full?
-    @cells.all
+    @cells.all? {|x| x != " "}
+  end
     
 
 
