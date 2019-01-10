@@ -30,10 +30,10 @@ class Board
     @cells.collect {|x| x == " "}.size / 3
   end
   
-  def taken
+  def taken?(position)
+    cells[position.to_i - 1] == "X" || cells[position.to_i - 1] == "O"
   end
   
-    
     
     def valid_move?(position)
     !(taken?(position))  && (0..9).include?(position.to_i - 1)
