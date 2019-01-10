@@ -33,9 +33,17 @@ class Board
   def taken
   end
   
-  def valid_move?
-end
     
+    
+    def valid_move?(board, index)
+  
+  def position_taken?(array, index)
+    if array[index] == " " || array[index] == "" || array[index] == nil
+      return false
+    else
+      return true
+    end
+  end
     
 
 
