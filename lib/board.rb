@@ -36,13 +36,7 @@ class Board
     
     
     def valid_move?(position)
-  
-  def position_taken?(array, index)
-    if array[i] == " " || array[index] == "" || array[index] == nil
-      return false
-    else
-      return true
-    end
+    !(taken?(position))  && (0..9).include?(position.to_i - 1)
   end
     
 
