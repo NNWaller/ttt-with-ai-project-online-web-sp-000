@@ -41,6 +41,7 @@ class Board
   
   def update(position, token)
     cells[position.to_i - 1] = token
+    binding.pry
   end
 
 
