@@ -20,11 +20,10 @@ class Board
   def position(user_input)
     @cells[user_input.to_i - 1]
   end
-  
-  def full?
-    @cells.all? {|x| x != " "}
-  end
     
+    def full?(board)
+  board.all?{|x| x == "X" || x == "O"}
+end
 
 
 end
