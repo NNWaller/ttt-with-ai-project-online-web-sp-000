@@ -21,11 +21,13 @@ class Board
     @cells[user_input.to_i - 1]
   end
     
-    
   
-def full?
+  def full?
        cells.all? {|cell| cell == "X" || cell == "O"}
   end
+  
+  def turn_count
+    
 
 
 end
