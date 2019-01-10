@@ -23,6 +23,7 @@ class Board
   
   def full?
     
+    
 
 
 end
