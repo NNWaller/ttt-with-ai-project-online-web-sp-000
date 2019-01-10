@@ -24,8 +24,7 @@ class Board
     
   
 def full?
-    @cells.all? do |cell|
-       cells.all? {|index| index == "X" || index == "O"}
+       cells.all {|index| index == "X" || index == "O"}
     end
     true
   end
