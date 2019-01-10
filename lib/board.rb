@@ -23,17 +23,12 @@ class Board
     
     
   
-  
-  def full?
-  cells.all? do |cell|
-    if cell == "X" || cell == "Y"
-      return true
+def full?
+    @cells.any? do |cell|
+       cells.all? {|index| index == "X" || index == "O"}
     end
+    true
   end
-else
-  return false
-end
-  
 
 
 end
