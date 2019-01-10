@@ -35,7 +35,7 @@ class Board
   
     
     
-    def valid_move?(board, index)
+    def valid_move?(position)
   
   def position_taken?(array, index)
     if array[i] == " " || array[index] == "" || array[index] == nil
