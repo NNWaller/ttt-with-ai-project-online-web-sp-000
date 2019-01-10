@@ -10,6 +10,7 @@ def reset!
 end
 
 def display
+  puts 
 end
 
 
