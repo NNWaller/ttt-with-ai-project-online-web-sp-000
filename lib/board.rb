@@ -24,7 +24,7 @@ class Board
     
   
 def full?
-       cells.all {|index| index == "X" || index == "O"}
+       cells.all? {|cell| cell == "X" || cell == "O"}
     true
   end
 
