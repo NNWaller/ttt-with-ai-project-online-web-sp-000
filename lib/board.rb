@@ -39,10 +39,7 @@ class Board
     !(taken?(position))  && (0..9).include?(position.to_i - 1)
   end
   
-  def update(position, token)
-    cells[position.to_i - 1] = token
-  end
-    
+ 
 
 
 end
